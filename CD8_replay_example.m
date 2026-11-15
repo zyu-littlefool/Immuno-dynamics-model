@@ -5,7 +5,7 @@
 % required.
 %
 % Run scope:
-%   Seed group 15 only, with three release modes:
+%   Seed group 12 only, with three release modes:
 %   m = 34 -> burst
 %   m = 35 -> sustained
 %   m = 36 -> burst-sustained
