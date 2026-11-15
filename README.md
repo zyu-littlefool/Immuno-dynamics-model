@@ -30,7 +30,8 @@ corresponding to 45 simulations in total.
     │
     ├── example_data/
     │   ├── README.md
-    │   └── [Reference output files]
+    │   ├── BCR tree.R
+    │   └── Sample_Data
     │
     ├── README.md
     ├── LICENSE
