@@ -1,5 +1,5 @@
-%% Reproducibility example: seed group 15, all three release modes
-% Runs the original simulations m = 43, 44, and 45 only.
+%% Reproducibility example: seed group 12, all three release modes
+% Runs the original simulations m = 34, 35, and 36 only.
 % Save this file as run_example.m in the same directory as run.m.
 
 repoRoot = fileparts(mfilename('fullpath'));
