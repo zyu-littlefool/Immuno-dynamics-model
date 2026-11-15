@@ -25,3 +25,4 @@ The example uses seed group 12 and contains three simulations:
 
    ```matlab
    run_example
+   CD8_replay_example.m
