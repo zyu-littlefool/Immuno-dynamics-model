@@ -1,4 +1,4 @@
-%% CD8T/TEFF replay — seed group 15 example
+%% CD8T/TEFF replay — seed group 12 example
 % This self-contained script replays CD8T/TEFF from antigen signals cached
 % by the main model. It does NOT rerun the main model or change cached Ag.
 % All CD8T/TEFF numerical code is included below; no external CD8 helper is
@@ -6,9 +6,9 @@
 %
 % Run scope:
 %   Seed group 15 only, with three release modes:
-%   m = 43 -> burst
-%   m = 44 -> sustained
-%   m = 45 -> burst-sustained
+%   m = 34 -> burst
+%   m = 35 -> sustained
+%   m = 36 -> burst-sustained
 %
 % Actual signal used in this analysis:
 %   AntigenSignalRaw, corresponding to Ag_pre + Ag_pre_2.
@@ -20,9 +20,9 @@
 %
 % Expected input layout:
 %   inputRoot/
-%     run43/CD8_input_cache.mat
-%     run44/CD8_input_cache.mat
-%     run45/CD8_input_cache.mat
+%     run34/CD8_input_cache.mat
+%     run35/CD8_input_cache.mat
+%     run36/CD8_input_cache.mat
 %
 % The script validates the exact run indices before performing the replay.
 
@@ -37,7 +37,7 @@ outputRoot = fullfile(repoRoot, ...
 
 nSeedGroups = 1;
 nReleaseModes = 3;
-expectedRunIndices = 43:45;
+expectedRunIndices = 34:36;
 
 signalSelection = "Ag_pre_plus_Ag_pre_2";
 
