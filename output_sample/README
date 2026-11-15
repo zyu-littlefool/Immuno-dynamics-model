@@ -1,0 +1,27 @@
+# Example Reference Outputs
+
+This directory contains reference outputs from the example reproduction.
+These files are provided for comparison only and are not input files
+required by the model.
+
+## Example Runs
+
+The example uses seed group 12 and contains three simulations:
+
+| Run index | Release mode 
+|---|---|---|
+| run34 | Burst or fast |
+| run35 | Sustained slow |
+| run36 | Burst-sustained or fast-slow |
+
+
+## How to Reproduce
+
+1. Download or clone the complete repository.
+2. Open MATLAB.
+3. Change the current folder to the repository root directory,
+   which contains `run.m` and `run_example.m`.
+4. Run:
+
+   ```matlab
+   run_example
