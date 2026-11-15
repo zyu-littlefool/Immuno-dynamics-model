@@ -1,0 +1,60 @@
+# BCR Tree Analysis
+
+This directory contains the input data and instructions for reproducing
+the BCR lineage-tree analysis using `BCR tree.R`.
+
+## Required Input Tables
+
+The analysis uses gene tables collected at simulation steps:
+
+- 1401;
+- 2101;
+- 2801.
+
+Only the following two cell populations are used:
+
+- `GC_sub`: place the corresponding gene tables in the `GC` folder;
+- `PC_sub`: place the corresponding gene tables in the `PC` folder.
+
+Do not include `GC_dom`, `PC_dom`, or gene tables from other time points
+unless the analysis is intentionally being modified.
+
+## Directory Structure
+
+Prepare the analysis directory as follows:
+
+```text
+BCR_tree_analysis/
+├── BCR tree.R
+├── GC/
+│   ├── Gene_GC_sub_at_1401_*.csv
+│   ├── Gene_GC_sub_at_2101_*.csv
+│   └── Gene_GC_sub_at_2801_*.csv
+│
+└── PC/
+    ├── Gene_PC_sub_at_1401_*.csv
+    ├── Gene_PC_sub_at_2101_*.csv
+    └── Gene_PC_sub_at_2801_*.csv
+
+## Running the Analysis in R
+
+The analysis was tested using R v4.3.0.
+
+Before running the script, open `BCR tree.R` and locate the following line:
+
+```r
+csv_dir <- "Your GC folder"
+
+Replace "Your GC folder" with the path to your output folder containing
+the required gene tables.
+For example, to analyse the GC_sub gene tables stored in the GC folder,
+set:
+csv_dir <- "path/to/GC"
+
+To analyse the PC_sub gene tables stored in the PC folder, change the
+path accordingly:
+csv_dir <- "path/to/PC"
+
+After setting csv_dir to the appropriate output folder, run the script
+in R or RStudio:s
+ource("BCR tree.R")
