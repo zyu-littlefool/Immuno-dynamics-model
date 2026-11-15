@@ -18,6 +18,7 @@ corresponding to 45 simulations in total.
 
     .
     ├── Code/
+    │   ├── BCR tree.R
     │   ├── run.m
     │   ├── run_example.m
     │   ├── run_full.m
@@ -29,13 +30,11 @@ corresponding to 45 simulations in total.
     │   └── get_Shannon.m
     │
     ├── example_data/
-    │   ├── README.md
-    │   ├── BCR tree.R
-    │   └── Sample_Data
+    │   ├── output_sample
+    │   └── output_GC tree
     │
     ├── README.md
-    ├── LICENSE
-    └── DATA_LICENSE.md
+    └── LICENSE
 
 ## Software Requirements
 
